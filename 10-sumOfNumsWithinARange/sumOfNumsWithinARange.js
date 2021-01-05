@@ -1,5 +1,10 @@
 function sumOfNumsWithinARange(nums, start, end) {
-  // Insert code here;
+  var count = 0;
+
+  nums.forEach(el => {
+    if (el >= start  && el <= end) count++;
+  });
+  return count;
 }
 
 // Do not edit this line;

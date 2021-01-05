@@ -1,5 +1,7 @@
 function setUnionOfAnyAmountOfSets(...args) {
-  // Insert code here;
+  let union = [];
+  args.forEach(el => union = new Set([...union, ...el]));
+  return union;
 }
 
 // Do not edit this line;
